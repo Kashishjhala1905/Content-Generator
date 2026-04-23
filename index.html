@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academic Content Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="workspace" aria-label="Academic research content generator">
+        <aside class="control-panel">
+          <div>
+            <p class="eyebrow">Research Assistant</p>
+            <h1>Academic Content Generator</h1>
+            <p class="intro">
+              Generate structured research paper content from a topic using a
+              formal, original, and research-oriented writing style.
+            </p>
+          </div>
+
+          <label for="topic">Research Topic</label>
+          <textarea
+            id="topic"
+            rows="5"
+            placeholder="Example: Artificial intelligence in personalized education"
+          ></textarea>
+
+          <div class="settings">
+            <label for="field">Academic Field</label>
+            <select id="field">
+              <option value="general">General Research</option>
+              <option value="technology">Technology</option>
+              <option value="education">Education</option>
+              <option value="healthcare">Healthcare</option>
+              <option value="business">Business</option>
+              <option value="environment">Environment</option>
+              <option value="social science">Social Science</option>
+            </select>
+          </div>
+
+          <div class="settings">
+            <label for="language">Output Language</label>
+            <select id="language">
+              <option value="english">English</option>
+              <option value="hindi">Hindi</option>
+              <option value="gujarati">Gujarati</option>
+              <option value="marathi">Marathi</option>
+              <option value="tamil">Tamil</option>
+              <option value="telugu">Telugu</option>
+              <option value="punjabi">Punjabi</option>
+              <option value="spanish">Spanish</option>
+              <option value="french">French</option>
+              <option value="german">German</option>
+            </select>
+          </div>
+
+          <button id="generateBtn" type="button">Generate Content</button>
+          <p id="status" class="status" role="status" aria-live="polite"></p>
+        </aside>
+
+        <section class="output-panel">
+          <div class="output-toolbar">
+            <div>
+              <p class="eyebrow">Generated Paper Sections</p>
+              <h2>Research Draft</h2>
+            </div>
+            <div class="actions">
+              <button id="copyBtn" type="button" disabled>Copy</button>
+              <button id="downloadBtn" type="button" disabled>Download</button>
+            </div>
+          </div>
+
+          <article id="output" class="paper-output">
+            <p class="placeholder">
+              Enter a topic and generate the academic content. The output will
+              include Title, Abstract, Introduction, Literature Review,
+              Methodology, Results & Discussion, and Conclusion in the selected
+              language.
+            </p>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

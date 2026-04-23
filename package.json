@@ -1,0 +1,16 @@
+{
+  "name": "academic-content-generator",
+  "version": "1.0.0",
+  "description": "A localhost academic research paper content generator.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "academic",
+    "content-generator",
+    "research"
+  ],
+  "author": "",
+  "license": "MIT"
+}
